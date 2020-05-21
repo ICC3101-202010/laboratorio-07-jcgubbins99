@@ -274,10 +274,18 @@ namespace Laboratorio07_jcg
 
         private void btdelete_Click(object sender, EventArgs e)
         {
-            if (textCalculadora.Text.Length == 1)
-                textCalculadora.Text = "";
-            else
-                textCalculadora.Text = textCalculadora.Text.Substring(0, textCalculadora.Text.Length - 1);
+            try
+            {
+                if (textCalculadora.Text.Length == 1)
+                    textCalculadora.Text = "";
+                else
+                    textCalculadora.Text = textCalculadora.Text.Substring(0, textCalculadora.Text.Length - 1);
+            }
+            catch(Exception)
+            {
+                textCalculadora.Text = "SYNTAX ERROR";
+            }
+            
         }
 
         private void btans_Click(object sender, EventArgs e)
