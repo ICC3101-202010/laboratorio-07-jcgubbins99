@@ -48,6 +48,7 @@
             this.btresta = new System.Windows.Forms.Button();
             this.btans = new System.Windows.Forms.Button();
             this.btigual = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textCalculadora
@@ -267,11 +268,23 @@
             this.btigual.UseVisualStyleBackColor = true;
             this.btigual.Click += new System.EventHandler(this.btigual_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(155, 360);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 38);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "+/-";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btigual);
             this.Controls.Add(this.btans);
             this.Controls.Add(this.btresta);
@@ -321,6 +334,7 @@
         private System.Windows.Forms.Button btresta;
         private System.Windows.Forms.Button btans;
         private System.Windows.Forms.Button btigual;
+        private System.Windows.Forms.Button button1;
     }
 }
 

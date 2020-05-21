@@ -15,6 +15,7 @@ namespace Laboratorio07_jcg
         double v1, v2;
         string operacion;
         string resultado;
+        double signo;
         public Form1()
         {
             InitializeComponent();
@@ -291,6 +292,22 @@ namespace Laboratorio07_jcg
         private void btans_Click(object sender, EventArgs e)
         {
             textCalculadora.Text = resultado;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                signo = Convert.ToDouble(textCalculadora.Text);
+                signo = signo - (signo * 2);
+                textCalculadora.Text = Convert.ToString(signo);
+            }
+            catch (Exception)
+            {
+                textCalculadora.Text = "SYNTAX ERROR";
+            }
+
         }
 
         private void btpunto_Click(object sender, EventArgs e)
